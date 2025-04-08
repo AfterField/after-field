@@ -13,6 +13,7 @@ body {
 /* Changing the background colour for the header */
 
 header {
+	color: #ffffff;
 	background-color: #143109;
 }
 
