@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up for a Match</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .step-circle {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #888;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    .divider {
+      flex-grow: 1;
+      height: 2px;
+      background-color: #888;
+    }
+    .form-section {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-light py-4">
+    <h1 class="text-center fst-italic">Sign up for a match</h1>
+  </header>
+
+  <!-- Progress tracker -->
+  <section class="bg-danger-subtle text-center py-4">
+    <div class="d-flex justify-content-center align-items-center mb-3">
+      <div class="step-circle"></div>
+      <div class="divider mx-2"></div>
+      <div class="step-circle"></div>
+    </div>
+    <p class="mb-0">Want to get on the field faster?</p>
+    <a href="#" class="text-decoration-underline">Sign up with email instead!</a>
+  </section>
+
+  <!-- Main content -->
+  <div class="container my-5">
+    <div class="row g-5">
+      <!-- Left side: Form -->
+      <div class="col-md-6">
+        <div class="form-section">
+          <h5 class="fw-bold mb-3">Your details</h5>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control bg-light" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone number</label>
+              <input type="tel" class="form-control bg-light" id="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control bg-light" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="preferences" class="form-label">Preferences:</label>
+              <textarea class="form-control bg-light" id="preferences" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right side: Event Info -->
+      <div class="col-md-6">
+        <div class="form-section">
+          <div class="d-flex mb-3">
+            <select class="form-select me-2">
+              <option selected>11 vs 11</option>
+            </select>
+            <select class="form-select">
+              <option selected>Individual</option>
+            </select>
+          </div>
+
+          <p><em>Event description</em><br>tralala</p>
+          <p class="mt-3"><strong>Date:</strong> April 21st</p>
+          <p><strong>Location:</strong> Breda, Netherlands</p>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Football_pitch_with_grass.jpg/640px-Football_pitch_with_grass.jpg" class="img-fluid rounded mb-4" alt="Field">
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Football_formation_4-4-2.png" class="img-fluid rounded" alt="Formation">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
