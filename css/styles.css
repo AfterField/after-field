@@ -13,7 +13,7 @@ body {
 /* Changing the background colour for the header */
 
 header {
-	background-color: #000060;
+	background-color: #143109;
 }
 
 /* Changing the background color for the navigation bar */
@@ -88,39 +88,19 @@ footer a:hover {
     background: rgba(0, 0, 0, 0.3);  
 }
 
-/* Cover image (Gabija) */
-.hero-section {
-	position: relative;
-	background-image: url('field_image.jpg'); /* Your local image */
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
+.logo-img {
+	max-width: 200px; 
+	height: auto;
+}
+
+/* Button color*/
+.custom-yellow {
+	background-color: #ffde21 !important;
+	color: #000; 
+	border-color: #ffde21 !important; 
   }
-  
-  .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 1;
+  .custom-yellow:hover {
+	background-color: #e6c800 !important;
+	border-color: #e6c800 !important;
   }
-  
-  .hero-content {
-	position: relative;
-	z-index: 2;
-	padding: 2rem;
-  }
-  
-  .hero-content .btn {
-	padding: 0.75rem 2rem;
-	font-size: 1.25rem;
-	font-weight: 500;
-	background-color: #143109;
-	border-color: #ffffff;
-  }
+
