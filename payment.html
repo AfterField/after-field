@@ -63,74 +63,37 @@
   </div>
 </header>
 <!-- End of a hero -->
-
-  <!-- Progress tracker -->
-
-	  
-  <!-- Main content -->
-  <div class="container my-5">
-    <div class="row g-5">
-      <!-- Left side: Form -->
-      <div class="col-md-6">
-        <div class="form-section">
-          <h3 class="fw-bold mb-3">Your details</h3>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name:</label>
-              <input type="text" class="form-control bg-light" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone number:</label>
-              <input type="tel" class="form-control bg-light" id="phone" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail:</label>
-              <input type="email" class="form-control bg-light" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="preferences" class="form-label">Preferences:</label>
-              <textarea class="form-control bg-light" id="preferences" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
-          </form>
-        </div>
+	
+<!-- Match CTA section -->
+<div class="container py-5 my-1">
+  <div class="row align-items-center">
+    <!-- Left Column -->
+    <div class="col-md-4">
+      <h3 class="fw-bold mb-3">Payment</h3>
+		
+       <div class="static-box">10€</div>
+			  <div class="price-input">
+		</div>
       </div>
-
-      <!-- Right side: Event Info -->
-      <div class="col-md-6">
-        <div class="form-section">
-          <div class="d-flex mb-3">
-            <select class="form-select me-2">
-              <option selected>11 vs 11</option>
-            </select>
-            <select class="form-select">
-              <option selected>Individual</option>
-            </select>
-          </div>
-
-          <p><em>Event description</em><br>tralala</p>
-          <p class="mt-3"><strong>Date:</strong> April 21st</p>
-          <p><strong>Location:</strong> Sportcomplex Paradijs Breda, Netherlands</p>
-
-          <img src="images/breda-field.jpg" class="img-fluid rounded mb-4" alt="Field">
-
-          <img src="images/afterfield-players-map.png" class="img-fluid rounded" alt="Formation">
-			<p><strong>Do you want your name displayed here?</strong></p>
-			<div class="form-check form-check-inline">
-				
-<!-- start of toggle -->
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">Yes</label>
+		  
+ <!-- start of dropdown -->
+		  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Select a payment method
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Ideal</a></li>
+    <li><a class="dropdown-item" href="#">Revolut</a></li>
+    <li><a class="dropdown-item" href="#">ABN AMRO</a></li>
+  </ul>
 </div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">No</label>
-</div>
-<!-- end of toggle -->
+<!-- end of drop-down -->
+
+		  <div class="card-footer p-2 text-end">
+         <a href="#" class="btn btn-primary">Confirm payment</a>
         </div>
-      </div>
     </div>
   </div>
+	  
 </body>
 </html>
-
