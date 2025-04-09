@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/afterfield-logo1.png" width="80" alt="Afterfield logo"> <!-- Increased width -->
+          <img src="images/afterfield-logo1.png" width="120" alt="Afterfield logo"> <!-- Increased width -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -54,17 +54,23 @@
     <!-- End of navigation bar -->
 
     <!-- Start of a hero -->
-    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/field_image.jpg'); background-size: cover; background-position: center;">
-      <div class="row">
-        <div class="col-md-8 col-lg-6 mx-auto py-5">
-          <p class="lead">Let's grab a beer</p>
-          <h1 class="display-3">After Field</h1>
-          <p class="mt-5">
-            <a href="#" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Call to action</a>
-          </p>
-        </div>
-      </div>
-    </header>
+    <header class="text-center container-fluid"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/field_image.jpg');
+               background-size: cover;
+               background-position: center;
+               min-height: 80vh;
+               display: flex;
+               align-items: center;">
+  <div class="row w-100">
+    <div class="col-md-8 col-lg-6 mx-auto py-5 text-white text-center">
+      <h2 class="fs-md-2 fs-md-1">Let's grab a beer</h2>
+      <h1 class="display-1 fw-bold fst-italic">After Field</h1>
+      <p class="mt-5">
+        <a href="#" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Call to action</a>
+      </p>
+    </div>
+  </div>
+</header>
 <!-- End of a hero -->
 
 <!-- Start of cards -->
