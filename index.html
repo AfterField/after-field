@@ -34,13 +34,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">About AfterField</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="example.html">Matches</a>
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active" aria-current="page" href="index.html">Events</a>
+              <a class="nav-link active" aria-current="page" href="events.html">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="corporate.html">Corporate</a>
@@ -65,78 +65,61 @@
     <div class="col-md-8 col-lg-6 mx-auto py-5 text-white text-center">
       <h2 class="fs-md-2 fs-md-1">Let's grab a beer</h2>
       <h1 class="display-1 fw-bold fst-italic">After Field</h1>
-      <p class="mt-5">
-        <a href="#" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Call to action</a>
-      </p>
+
+      <form class="mt-5">
+        <label for="exampleDataList" class="form-label">Find events by location!</label>
+        <div class="input-group justify-content-center">
+          <input class="form-control form-control-sm w-75" style="max-width: 300px;" list="datalistOptions" id="exampleDataList" placeholder="Type the location...">
+          <datalist id="datalistOptions">
+            <option value="Breda">
+            <option value="Rotterdam">
+            <option value="Amsterdam">
+            <option value="The Hague">
+            <option value="Maastricht">
+          </datalist>
+          <a href="events.html" class="btn text-white border-0" style="background: #ffde21;">
+            Search
+          </a>
+        </div>
+      </form>
+
     </div>
   </div>
 </header>
 <!-- End of a hero -->
 
 <!-- Start of cards -->
-<main class="container my-5"> <!-- spacing between hero and cards -->
-  <div class="row g-4 justify-content-evenly"> <!-- g-4 for spacing between cards -->
-
-    <!-- Card #1 -->
-    <div class="col-sm-6 col-lg-4 col-xl-3">
-      <div class="card shadow h-100">
-        <img class="img-fluid" src="images/players.jpg" alt="Football players">
-        <div class="card-body">
-          <h5 class="card-title">Find like-minded football players</h5>
-          <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
-        </div>
+<div class="container text-center py-5">
+  <div class="row g-5">
+    <div class="col-md-4">
+      <div class="card-body">
+        <img class="service-icon" src="images/people.svg" alt="Find players icon">
+        <h5 class="card-title">Connect with fellow footballers</h5>
+        <p class="card-text">Meet players who share your passion and level. Build your squad, join local games, and grow your community.</p>
       </div>
     </div>
-
-    <!-- Card #2 -->
-    <div class="col-sm-6 col-lg-4 col-xl-3">
-      <div class="card shadow h-100">
-        <img class="img-fluid" src="images/freedom.jpg" alt="Nice view">
-        <div class="card-body">
-          <h5 class="card-title">No attachments</h5>
-          <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit...</p>
-        </div>
+    <div class="col-md-4">
+      <div class="card-body">
+        <img class="service-icon" src="images/breaking-chain.svg" alt="No strings attached icon">
+        <h5 class="card-title">Zero commitments</h5>
+        <p class="card-text">Play when you want, where you want. No memberships or obligations—just football, your way.</p>
       </div>
     </div>
-
-    <!-- Card #3 -->
-    <div class="col-sm-6 col-lg-4 col-xl-3">
-      <div class="card shadow h-100">
-        <img class="img-fluid" src="images/beer.jpg" alt="Beer">
-        <div class="card-body">
-          <h5 class="card-title">Grab a beer After Field!</h5>
-          <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
-        </div>
+    <div class="col-md-4">
+      <div class="card-body">
+        <img class="service-icon" src="images/beer.svg" alt="Socialize icon">
+        <h5 class="card-title">Grab a beer After Field!</h5>
+        <p class="card-text">Celebrate post-match with drinks and good vibes. It's not just about the game—it's about the people too.</p>
       </div>
-    </div>
-
-  </div>
-</main>
-<!-- End of cards -->
-
-<!-- Start of companies -->
-<figure class="text-center my-5"> <!-- spacing before and after -->
-  <blockquote class="blockquote">
-    <h2>Trusted by the World's best companies</h2>
-  </blockquote>
-</figure>
-
-<div class="container text-center my-5">
-  <div class="row align-items-end">
-    <div class="col">
-      <img class="img-fluid logo-img" src="images/nike.png" alt="Nike logo">
-    </div>
-    <div class="col">
-      <img class="img-fluid logo-img" src="images/heineken.png" alt="Heineken logo">
-    </div>
-    <div class="col">
-      <img class="img-fluid logo-img" src="images/adidas.svg" alt="Adidas logo">
     </div>
   </div>
 </div>
-<!-- End of companies -->
+<!-- End of cards -->
+
+
 
 <!-- Match CTA section -->
+<div class="full-width-trusted-section-event">
 <div class="container py-5 my-5">
   <div class="row align-items-center">
     <!-- Left Column -->
@@ -159,7 +142,33 @@
     </div>
   </div>
 </div>
+</div>
 <!-- End of match CTA -->
+
+<!-- Start of companies -->
+
+<div class="full-width-trusted-section">
+  <div class="container text-center py-5">
+    <figure class="text-center mb-5">
+      <blockquote class="blockquote">
+        <h2 class="trusted-title">Trusted by the World's best companies</h2>
+      </blockquote>
+    </figure>
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-4 col-md-2">
+        <img class="img-fluid brand-logo" src="images/nike_logo.png" alt="Nike logo">
+      </div>
+      <div class="col-4 col-md-2">
+        <img class="img-fluid brand-logo" src="images/heineken.png" alt="Heineken logo">
+      </div>
+      <div class="col-4 col-md-2">
+        <img class="img-fluid brand-logo" src="images/adidas.png" alt="Adidas logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of companies -->
+
 
 
   </body>

@@ -137,3 +137,62 @@ footer a:hover {
 .price-input {
   margin-bottom: 16px; /* increases space below the price */
 }
+
+/* The icons */
+.service-icon {
+	max-width: 80px;
+	max-height: 80px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+  }
+
+  /* The benifits*/
+  .card-body {
+	padding: 60px;
+  }
+  
+  .container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+  }
+  
+  .row.g-5 {
+	--bs-gutter-x: 3rem;
+	--bs-gutter-y: 3rem;
+  }
+
+  .full-width-trusted-section {
+	background-color: #143109; 
+	padding: 80px 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+  }
+
+  .full-width-trusted-section-event {
+	background-color: #d0d6b3; 
+	padding: 80px 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .trusted-title {
+	font-weight: 700;
+	font-size: 1.75rem;
+	color: #ffffff;
+  }
+  
+  .brand-logo {
+	max-height: 60px;
+	object-fit: contain;
+	filter: grayscale(100%); /* optional: makes logos feel uniform */
+	opacity: 0.8;
+	transition: all 0.3s ease;
+  }
+  
+  .brand-logo:hover {
+	opacity: 1;
+	filter: grayscale(0%);
+  }
