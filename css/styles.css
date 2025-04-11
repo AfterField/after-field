@@ -100,6 +100,8 @@ footer a:hover {
 	background-color: #ffde21 !important;
 	color: #000; 
 	border-color: #ffde21 !important; 
+	padding: 12px 24px;
+	border-radius: 12px;
   }
   .custom-yellow:hover {
 	background-color: #e6c800 !important;
