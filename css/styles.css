@@ -318,3 +318,22 @@ footer {
   margin-top: 0;
 }
 
+/* Container to position the progress bar */
+.progress-container {
+  position: absolute;
+  top: 30%; /* Adjust this value to position it lower or higher */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; /* Adjust width of the progress bar */
+}
+
+/* Styling the progress bar */
+.progress {
+  height: 20px; /* Shorter progress bar */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.progress-bar {
+  height: 100%; /* Fill the progress bar height */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}

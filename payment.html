@@ -70,37 +70,84 @@
   </div>
 </header>
 <!-- End of a hero -->
-	
-<!-- Match CTA section -->
-<div class="container py-5 my-1">
-  <div class="row align-items-center">
-    <!-- Left Column -->
-    <div class="col-md-4">
-      <h3 class="fw-bold mb-3">Payment</h3>
-		
-       <div class="static-box">10€</div>
-			  <div class="price-input">
-		</div>
-      </div>
-		  
- <!-- start of dropdown -->
-		  <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Select a payment method
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Ideal</a></li>
-    <li><a class="dropdown-item" href="#">Revolut</a></li>
-    <li><a class="dropdown-item" href="#">ABN AMRO</a></li>
-  </ul>
+	  
+<div class="d-flex justify-content-center mt-4 mb-2">
+  <div class="progress" role="progressbar" aria-label="Basic example" 
+       aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" 
+       style="width: 50%;">
+    <div class="progress-bar bg-success" style="width: 50%;"></div>
+  </div>
 </div>
-<!-- end of drop-down -->
 
-		  <div class="card-footer p-2 text-end">
-         <a href="#" class="btn btn-primary">Confirm payment</a>
+     <!-- A grid with 2 columns
+      Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
+    -->
+    <main class="container my-2r">
+      <div class="row justify-content-evenly">
+
+        <!-- Column #1 -->
+        <div class="col-sm-6 col-xl-5 col-xxl-4" >
+          <h2 class="w-30">Amount to Pay:</h2>
+			
+		    <h3 class="w-30" >€10 (includes all taxes and fees)</h3>
+        <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle custom-green text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Credit/Debit card
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Ideal</a></li>
+      <li><a class="dropdown-item" href="#">Revolut</a></li>
+	  <li><a class="dropdown-item" href="#">ABN Amro</a></li>
+    </ul>
+  </div>
         </div>
+
+        <!-- Column #2 -->
+        <div class="col-sm-6 col-xl-5 col-xxl-4">
+          <h2 class="w-50">Payment details:</h2>
+			<p>Cardholder name</p>
+              <div class="input-group mb-3">
+               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+			
+				<p>Card number</p>
+              <div class="input-group mb-3">
+               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+			
+			    <p>Expiration date</p>
+              <div class="input-group mb-3">
+               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary custom-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Confirm
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Payment confirmed</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You're going to be on the field! Yup! Mhm! YAY!!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Homepage</button>
+      </div>
     </div>
   </div>
+</div>
+        </div>
+
+      </div>
+    </main>
+    <!-- End of the grid with columns -->
 	  
 <!-- Footer-->
 <div class="container">
