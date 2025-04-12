@@ -23,10 +23,10 @@
   <body class="h-100 d-flex flex-column">
 
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg nav-underline sticky-sm-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/afterfield-logo1.png" width="80" alt="Afterfield logo"> <!-- Increased width -->
+          <img src="images/afterfield-logo1.png" width="120" alt="Afterfield logo"> <!-- Increased width -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,31 +34,38 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">About AfterField</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="example.html">Matches</a>
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active" aria-current="page" href="index.html">Events</a>
+              <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="corporate.html">Corporate</a>
+              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Join an event!</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
+    
+    <!-- End of navigation bar -->
 
-  <!-- Header -->
-   <!-- Start of a hero -->
-<header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
-  <div class="row">
-    <div class="col-md-8 col-lg-6 mx-auto py-5">
-      <h1 class="display-3">Sign up for a match</h1>
-		      <p class="lead">Want to get on the field faster?&nbsp; Sign up with e-mail instead!</p>
-      <p class="mt-5">
-      </p>
+    <!-- Start of a hero -->
+  <header class="text-center container-fluid"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/field_image.jpg');
+               background-size: cover;
+               background-position: center;
+               min-height: 50vh;
+               display: flex;
+               align-items: center;">
+  <div class="row w-100">
+    <div class="col-md-8 col-lg-6 mx-auto py-5 text-white text-center">
+      <h2 class="fs-md-2 fs-md-1">It's all casual</h2>
+      <h1 class="display-1 fw-bold fst-italic">Events</h1>
+
     </div>
   </div>
 </header>
@@ -94,6 +101,47 @@
         </div>
     </div>
   </div>
+	  
+<!-- Footer-->
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Directly to</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="corporate.html" class="nav-link p-0 text-body-secondary">Corporate</a></li>
+          <li class="nav-item mb-2"><a href="events-updated.html" class="nav-link p-0 text-body-secondary">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Follow After Field</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/after.field/?hl=en" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.youtube.com/@AfterFieldOfficial" class="nav-link p-0 text-body-secondary">Youtube</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly updates about our newest exciting events!</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+            <a href="index.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Subscribe</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
 	  
 </body>
 </html>
