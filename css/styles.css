@@ -108,6 +108,19 @@ footer a:hover {
 	border-color: #e6c800 !important;
   }
 
+  .custom-green {
+	background-color: #143109 !important;
+	color: #ffffff; 
+	border-color: #143109 !important; 
+	padding: 12px 24px;
+	border-radius: 12px;
+  }
+  .custom-green:hover {
+	background-color: #2a521b !important;
+	border-color: #2a521b !important;
+	color: #ffffff; 
+  }
+
 .card-location {
 	font-family: "parabolica", sans-serif;
 	font-weight: 400;
@@ -197,4 +210,13 @@ footer a:hover {
   .brand-logo:hover {
 	opacity: 1;
 	filter: grayscale(0%);
+  }
+
+  /*Image zoom in*/
+  .img-zoom-hover {
+	transition: transform 0.3s ease;
+  }
+  
+  .img-zoom-hover:hover {
+	transform: scale(1.05); /* Adjust the scale as needed */
   }
