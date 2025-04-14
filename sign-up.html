@@ -22,11 +22,11 @@
   </head>
   <body class="h-100 d-flex flex-column">
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+   <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg nav-underline sticky-sm-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="images/afterfield-logo1.png" width="80" alt="Afterfield logo"> <!-- Increased width -->
+          <img src="images/afterfield-logo1.png" width="120" alt="Afterfield logo"> <!-- Increased width -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,111 +34,179 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">About AfterField</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="example.html">Matches</a>
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active" aria-current="page" href="index.html">Events</a>
+              <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="corporate.html">Corporate</a>
+              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Join an event!</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
+    
+    <!-- End of navigation bar -->
 
-  <!-- Header -->
-   <!-- Start of a hero -->
-<header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
-  <div class="row">
-    <div class="col-md-8 col-lg-6 mx-auto py-5">
-      <h1 class="display-3">Sign up for a match</h1>
-		      <p class="lead">Want to get on the field faster?&nbsp; Sign up with e-mail instead!</p>
-      <p class="mt-5">
-      </p>
+    <!-- Start of a hero -->
+  <header class="text-center container-fluid"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/sign-up/sign-up-hero-3.jpg');
+               background-size: cover;
+               background-position: center;
+               min-height: 50vh;
+               display: flex;
+               align-items: center;">
+  <div class="row w-100">
+    <div class="col-md-8 col-lg-6 mx-auto py-5 text-white text-center">
+      <h1 class="display-1 fw-bold fst-italic">Sign-up</h1>
+
     </div>
   </div>
 </header>
 <!-- End of a hero -->
 
-  <!-- Progress tracker -->
-	  
-  <!-- Main content -->
-
-	  
-  <div class="container my-5">
-    <div class="row g-5">
-      <!-- Left side: Form -->
-		<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 25%">25%</div>
-</div>
-      <div class="col-md-6">
-        <div class="form-section">
-          <h3 class="fw-bold mb-3">Your details</h3>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name:</label>
-              <input type="text" class="form-control bg-light" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone number:</label>
-              <input type="tel" class="form-control bg-light" id="phone" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail:</label>
-              <input type="email" class="form-control bg-light" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="preferences" class="form-label">Preferences:</label>
-              <textarea class="form-control bg-light" id="preferences" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Right side: Event Info -->
-      <div class="col-md-6">
-        <div class="form-section">
-          <div class="d-flex mb-3">
-            <select class="form-select me-2">
-              <option selected>11 vs 11</option>
-            </select>
-            <select class="form-select">
-              <option selected>Individual</option>
-            </select>
-          </div>
-
-          <p><em>Event description</em><br>tralala</p>
-          <p class="mt-3"><strong>Date:</strong> April 21st</p>
-          <p><strong>Location:</strong> Sportcomplex Paradijs Breda, Netherlands</p>
-
-          <img src="images/breda-field.jpg" class="img-fluid rounded mb-4" alt="Field">
-
-          <img src="images/afterfield-players-map.png" class="img-fluid rounded" alt="Formation">
-			<p><strong>Do you want your name displayed here?</strong></p>
-			<div class="form-check form-check-inline">
-				
-<!-- start of toggle -->
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">Yes</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">No</label>
-</div>
-<!-- end of toggle -->
-			<div style="padding-bottom: 20px;">
+<div class="d-flex justify-content-center mt-4 mb-2">
+  <div class="progress" role="progressbar" aria-label="Basic example" 
+       aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" 
+       style="width: 50%;">
+    <div class="progress-bar bg-success" style="width: 0%;"></div>
+  </div>
 </div>
 
+     <!-- A grid with 2 columns
+      Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
+    -->
+    <main class="container my-2r">
+      <div class="row justify-content-evenly">
+
+        <!-- Column #1 -->
+  <div class="col-sm-6 col-xl-5 col-xxl-4" >
+          <h2 class="w-30">11 vs 11</h2>
 			
+<select class="form-select form-select-lg mb-3" aria-label="Large select example" style="width: 200px">
+  <option selected>Individual</option>
+  <option value="1">Group</option>
+</select>
+			
+	<p>We’re meeting up on a local pitch in Breda, mixing players into teams, and running short, laidback matches where it’s more about connection rather than competition.</p>
+	<p>Afterwards, we’ll head to a nearby local spot to keep the vibe going. No trophies here — just hot pizza and cold beer for the team that takes the win. First round’s on us. Whether you’re staying for one drink or the whole night, you’ll be part of a crew by the end of the day.</p>
+	<p><strong>Date:</strong> April 21st</p> 
+    <p><strong>Location:</strong> Sportcomplex Paradijs Breda, Netherlands</p> 
+			
+ <img src="images/sign-up/breda-field.jpg" class="img-fluid rounded mb-4" alt="Field"> 
         </div>
+       
+		  
+        <!-- Column #2 -->
+        <div class="col-sm-6 col-xl-5 col-xxl-4 mb-3">
+          <h2 class="w-50">Your details:</h2>
+		   <p>First and last name:</p>
+  <div class="input-group mb-3">
+               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+			
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+			
+			    <p>Phone number:</p>
+              <div class="input-group mb-3">
+               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary custom-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Confirm
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">One more thing...</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+<!-- Image -->
+        <img src="images/sign-up/afterfield-players-map.png" class="img-fluid rounded mx-auto d-block" alt="Field Players Formation">
+        
+        <!-- Question -->
+        <p><strong>Do you want your name displayed here?</strong></p>
+
+        <!-- Radio buttons (toggle) -->
+		<div class="d-flex justify-content-center">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Yes</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">No</label>
+        </div>
+        <!-- End of radio buttons -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <a href="payment.html" class="btn btn-primary">Proceed to Payment</a>
       </div>
     </div>
   </div>
+</div>
+  </div>
+
+    </main>
+    <!-- End of the grid with columns -->
+	  
+<!-- Footer-->
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Directly to</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="corporate.html" class="nav-link p-0 text-body-secondary">Corporate</a></li>
+          <li class="nav-item mb-2"><a href="events-updated.html" class="nav-link p-0 text-body-secondary">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Follow After Field</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/after.field/?hl=en" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.youtube.com/@AfterFieldOfficial" class="nav-link p-0 text-body-secondary">Youtube</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly updates about our newest exciting events!</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+            <a href="index.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Subscribe</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+	  
 </body>
 </html>
 
