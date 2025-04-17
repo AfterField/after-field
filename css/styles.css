@@ -157,11 +157,6 @@ footer a:hover {
     color: #333;
     }
 
-.price-input {
-  margin-bottom: 16px; 
-}
-
-
 /* The icons */
  .service-icon {
  	max-width: 80px;
@@ -196,7 +191,7 @@ footer a:hover {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
- /* The benifits*/
+ /* The benefits*/
   .card-body {
 	padding: 60px;
   }
@@ -300,71 +295,16 @@ input[type="date"]:hover {
   cursor: pointer;
 }
 
-/* Style the dropdown button */
-.dropdown .btn {
-  background-color: #ffde21;      
-  color: #333;                    
-  font-family: "parabolica", sans-serif;
-  font-size: 14px;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 16px;
-  transition: background-color 0.3s ease;
-}
-
-/* Hover effect on button */
-.dropdown .btn:hover {
-  background-color: #f7c600;
-  color: #000;
-}
-
-/* Style the dropdown menu */
-.dropdown-menu {
-  background-color: #fffbe6;
-  border-radius: 8px;
-  border: 1px solid #f0d800;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: "parabolica", sans-serif;
-}
-
-/* Style the individual dropdown items */
-.dropdown-item {
-  color: #333;
-  padding: 10px 16px;
-  font-size: 14px;
-}
-
-/* Hover effect on dropdown items */
-.dropdown-item:hover {
-  background-color: #ffe94d;
-  color: #000;
-}
-
 .cards-container {
   background-color: #aaae7f;
   padding: 20px;
   margin-bottom: 0px;
 }
 
-.sign-up-custom-btn {
-  background-color: #143109;
-  color: white;
-  font-family: "parabolica", sans-serif;
-  font-size: 15px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.sign-up-custom-btn:hover {
-  background-color: #2a521b;
-}
-
 footer {
   margin-top: 0;
 }
 
-/* Container to position the progress bar */
 .progress-container {
   position: absolute;
   top: 30%; 
@@ -373,7 +313,6 @@ footer {
   width: 50%; 
 }
 
-/* Styling the progress bar */
 .progress {
   height: 20px; 
   border-radius: 10px; 
