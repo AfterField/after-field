@@ -338,7 +338,7 @@ input[type="date"]:hover {
 }
 
 .cards-container {
-  background-color: #d0d6b3;
+  background-color: #aaae7f;
   padding: 20px;
   margin-bottom: 0px;
 }
@@ -389,4 +389,24 @@ footer {
 .my-carousel .carousel-item img {
   object-fit: cover;
   height: 500px; 
+}
+
+  .tag {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.6em;
+  }
+
+ .green-tag-individual { 
+	 background-color: #d0d6b3; 
+	 color: #143109;
+}
+
+ .yellow-tag-team { 
+	 background-color: #ffde21; 
+	 color: #143109;
 }

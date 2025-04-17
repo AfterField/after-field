@@ -22,7 +22,7 @@
   </head>
   <body class="h-100 d-flex flex-column">
 
-   <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
     <nav class="navbar navbar-expand-lg nav-underline sticky-sm-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About Us</a>
@@ -43,15 +43,15 @@
               <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
             <li class="nav-item">
-              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Join an event!</a>
+              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Check all events!</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     
-    
-    <!-- End of navigation bar -->
+
+	<!-- End of navigation bar -->
 
     <!-- Start of a hero -->
   <header class="text-center container-fluid"
@@ -86,13 +86,9 @@
 
         <!-- Column #1 -->
   <div class="col-sm-6 col-xl-5 col-xxl-4" >
-          <h2 class="w-30">11 vs 11</h2>
-			
-<select class="form-select form-select-lg mb-3" aria-label="Large select example" style="width: 200px">
-  <option selected>Individual</option>
-  <option value="1">Team</option>
-</select>
-			
+	<h2 class="w-30">11 vs 11</h2>		  
+	  <span class="tag green-tag">Individual</span>
+	  
 	<p>We’re meeting up on a local pitch in Breda, mixing players into teams, and running short, laidback matches where it’s more about connection rather than competition.</p>
 	<p>Afterwards, we’ll head to a nearby local spot to keep the vibe going. No trophies here — just hot pizza and cold beer for the team that takes the win. First round’s on us. Whether you’re staying for one drink or the whole night, you’ll be part of a crew by the end of the day.</p>
 	<p><strong>Date:</strong> April 21st</p> 
@@ -188,6 +184,15 @@
         </ul>
       </div>
 
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">info@afterfield.com</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">+31611111111</a></li>
+        </ul>
+      </div>
+      
+
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
           <h5>Subscribe to our newsletter</h5>
@@ -200,6 +205,11 @@
         </form>
       </div>
     </div>
+
+    <div class="col-12 col-md-2 mb-3 text-center">
+      <img src="images/afterfield-logo2.png" alt="AfterField Logo" class="img-fluid" style="max-height: 200px;">
+    </div>
+
 
     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>
