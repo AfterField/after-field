@@ -380,3 +380,13 @@ footer {
   height: 100%; /* Fill the progress bar height */
   border-radius: 10px; /* Optional: Adds rounded corners */
 }
+
+/* carousel */
+.my-carousel .carousel-inner {
+  max-height: 400px; /* Adjust as needed */
+}
+
+.my-carousel .carousel-item img {
+  object-fit: cover;
+  height: 500px; /* Match the max-height above */
+}
