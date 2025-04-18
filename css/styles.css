@@ -32,8 +32,8 @@ h6 {
   font-weight: 500;
   font-style: italic;
   color:#143109;
-  padding-bottom: 3em;
-  padding-top: 3em;
+  padding-bottom: 1em;
+  padding-top: 2em;
   padding-left: 1em;
 }
 
@@ -129,12 +129,6 @@ footer a:hover {
 .spaces-text {
   margin-top: 3em;
   margin-bottom: 2em;
-}
-
-.img-size {
-  position: relative;
-  width: 100%;
-  padding-top: 177.78%;
 }
 
 
