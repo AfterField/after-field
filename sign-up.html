@@ -22,7 +22,7 @@
   </head>
   <body class="h-100 d-flex flex-column">
 
-   <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
     <nav class="navbar navbar-expand-lg nav-underline sticky-sm-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About Us</a>
@@ -43,15 +43,15 @@
               <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
             <li class="nav-item">
-              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Join an event!</a>
+              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Check all events!</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     
-    
-    <!-- End of navigation bar -->
+
+	<!-- End of navigation bar -->
 
     <!-- Start of a hero -->
   <header class="text-center container-fluid"
@@ -68,8 +68,10 @@
     </div>
   </div>
 </header>
+	  
 <!-- End of a hero -->
 
+<!-- Start of progress bar -->
 <div class="d-flex justify-content-center mt-4 mb-2">
   <div class="progress" role="progressbar" aria-label="Basic example" 
        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" 
@@ -77,65 +79,67 @@
     <div class="progress-bar bg-success" style="width: 0%;"></div>
   </div>
 </div>
+<!-- End of progress bar -->
+	  
+<!-- Grid with 2 columns-->
+<main class="container my-2r">
+ <div class="row justify-content-evenly">
 
-     <!-- A grid with 2 columns
-      Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
-    -->
-    <main class="container my-2r">
-      <div class="row justify-content-evenly">
-
-        <!-- Column #1 -->
+  <!-- Left Column -->
   <div class="col-sm-6 col-xl-5 col-xxl-4" >
-          <h2 class="w-30">11 vs 11</h2>
-			
-<select class="form-select form-select-lg mb-3" aria-label="Large select example" style="width: 200px">
-  <option selected>Individual</option>
-  <option value="1">Team</option>
-</select>
-			
+   <h2 class="w-30">11 vs 11</h2>		  
+	<span class="tag green-tag-individual">Individual</span><br>
+	  
+	 <div class="info-row">
+      <img src="images/sign-up/info-circle-fill.svg" alt="information icon" style="margin-right: 6px;">
+       <span>For this event, you can only sign up individually. Fees apply at registration.</span>
+     </div><br>
+	  
 	<p>We’re meeting up on a local pitch in Breda, mixing players into teams, and running short, laidback matches where it’s more about connection rather than competition.</p>
 	<p>Afterwards, we’ll head to a nearby local spot to keep the vibe going. No trophies here — just hot pizza and cold beer for the team that takes the win. First round’s on us. Whether you’re staying for one drink or the whole night, you’ll be part of a crew by the end of the day.</p>
 	<p><strong>Date:</strong> April 21st</p> 
     <p><strong>Location:</strong> Sportcomplex Paradijs Breda, Netherlands</p> 
 			
- <img src="images/sign-up/breda-field.jpg" class="img-fluid rounded mb-4" alt="Field"> 
-        </div>
+  <img src="images/sign-up/field-breda.jpg" class="img-fluid rounded mb-4" alt="Field in Breda"> 
+ </div>
        
 		  
-        <!-- Column #2 -->
-        <div class="col-sm-6 col-xl-5 col-xxl-4 mb-3">
-          <h2 class="w-50">Your details:</h2>
-		   <p>First and last name:</p>
-  <div class="input-group mb-3">
-               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-  </div>
+<!-- Right column -->
+<div class="col-sm-6 col-xl-5 col-xxl-4 mb-3">
+  <h2 class="w-50">Your details:</h2>
+   <p>First and last name:</p>
+    <div class="input-group mb-3">
+       <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
 			
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address:</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
+        <div class="mb-3">
+         <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
 			
-			    <p>Phone number:</p>
-              <div class="input-group mb-3">
-               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
-
+        <div class="mb-3">
+		 <p>Phone number:</p>
+          <div class="input-group mb-3">
+           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+			
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary custom-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary custom-yellow" data-bs-toggle="modal" data-bs-target="#ConfirmModal">
   Confirm
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ConfirmModal" tabindex="-1" aria-labelledby="ConfirmModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">One more thing...</h1>
+        <h1 class="modal-title fs-5" id="ConfirmModalLabel">One more thing...</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-<!-- Image -->
+		  
+        <!-- Image -->
         <img src="images/sign-up/afterfield-players-map.png" class="img-fluid rounded mx-auto d-block" alt="Field Players Formation">
         
         <!-- Question -->
@@ -152,19 +156,22 @@
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
           <label class="form-check-label" for="inlineRadio2">No</label>
         </div>
-        <!-- End of radio buttons -->
       </div>
+		<!-- End of radio buttons -->
+		  
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <a href="payment.html" class="btn btn-primary">Proceed to Payment</a>
+        <button type="button" class="btn btn-secondary custom-green" data-bs-dismiss="modal">Cancel</button>
+        <a href="payment.html" class="btn btn-primary custom-yellow">Proceed to Payment</a>
       </div>
+     </div>
     </div>
+   </div>
   </div>
+ </div>
 </div>
-  </div>
-
+	
     </main>
-    <!-- End of the grid with columns -->
+<!-- End of the grid with columns -->
 	  
 <!-- Footer-->
 <div class="container">
@@ -188,6 +195,15 @@
         </ul>
       </div>
 
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">info@afterfield.com</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">+31611111111</a></li>
+        </ul>
+      </div>
+      
+
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
           <h5>Subscribe to our newsletter</h5>
@@ -200,6 +216,11 @@
         </form>
       </div>
     </div>
+
+    <div class="col-12 col-md-2 mb-3 text-center">
+      <img src="images/afterfield-logo2.png" alt="AfterField Logo" class="img-fluid" style="max-height: 200px;">
+    </div>
+
 
     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>

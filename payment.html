@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg nav-underline sticky-sm-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="images/afterfield-logo1.png" width="80" alt="Afterfield logo"> 
+          <img src="images/afterfield-logo1.png" width="80" alt="Afterfield logo"> <!-- Increased width -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About Us</a>
@@ -43,7 +43,7 @@
               <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
             <li class="nav-item">
-              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Join an event!</a>
+              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Check all events!</a>
             </li>
           </ul>
         </div>
@@ -78,75 +78,74 @@
   </div>
 </div>
 
-     <!-- A grid with 2 columns
-      Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
-    -->
+     <!-- Grid with 2 columns -->
     <main class="container my-2r">
       <div class="row justify-content-evenly">
 
-        <!-- Column #1 -->
+        <!-- Left column -->
         <div class="col-sm-6 col-xl-5 col-xxl-4" >
           <h2 class="w-30">Amount to Pay:</h2>
 			
 		    <h4 class="w-30" >€10 (includes team overshirts and balls on the day of the event)</h4>
         <div class="dropdown">
+			
     <button class="btn btn-secondary dropdown-toggle custom-green text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Credit/Debit card
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Ideal</a></li>
-      <li><a class="dropdown-item" href="#">Revolut</a></li>
-	  <li><a class="dropdown-item" href="#">ABN Amro</a></li>
+      <li><a class="dropdown-item">Ideal</a></li>
+      <li><a class="dropdown-item">Revolut</a></li>
+	  <li><a class="dropdown-item">ABN Amro</a></li>
     </ul>
   </div>
-        </div>
+ </div>
 
-        <!-- Column #2 -->
-        <div class="col-sm-6 col-xl-5 col-xxl-4">
-          <h2 class="w-50">Payment details:</h2>
-			<p>Cardholder name</p>
-              <div class="input-group mb-3">
-               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
+        <!-- Right column -->
+ <div class="col-sm-6 col-xl-5 col-xxl-4">
+  <h2 class="w-50">Payment details:</h2>
+	<p>Cardholder name</p>
+      <div class="input-group mb-3">
+       <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+       </div>
 			
-				<p>Card number</p>
-              <div class="input-group mb-3">
-               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
+	<p>Card number</p>
+      <div class="input-group mb-3">
+       <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+       </div>
 			
-			    <p>Expiration date</p>
-              <div class="input-group mb-3">
-               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
+	<p>Expiration date</p>
+      <div class="input-group mb-3">
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary custom-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary custom-yellow" data-bs-toggle="modal" data-bs-target="#PaymentModal">
   Confirm
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="PaymentModal" tabindex="-1" aria-labelledby="PaymentModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Payment confirmed</h1>
+        <h1 class="modal-title fs-5" id="PaymentModalLabel">Payment confirmed</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         Your spot’s locked in🙌 See you on the pitch!
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		<a href="index.html" class="btn btn-primary">Return to Homepage</a>
+        <button type="button" class="btn btn-secondary custom-green" data-bs-dismiss="modal">Close</button>
+		<a href="index.html" class="btn btn-primary custom-yellow">Return to Homepage</a>
       </div>
     </div>
+   </div>
   </div>
+ </div>
 </div>
-        </div>
-
-      </div>
+		
     </main>
-    <!-- End of the grid with columns -->
+<!-- End of the grid with columns -->
 	  
 <!-- Footer-->
 <div class="container">
@@ -170,6 +169,15 @@
         </ul>
       </div>
 
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">info@afterfield.com</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">+31611111111</a></li>
+        </ul>
+      </div>
+      
+
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
           <h5>Subscribe to our newsletter</h5>
@@ -182,6 +190,11 @@
         </form>
       </div>
     </div>
+
+    <div class="col-12 col-md-2 mb-3 text-center">
+      <img src="images/afterfield-logo2.png" alt="AfterField Logo" class="img-fluid" style="max-height: 200px;">
+    </div>
+
 
     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>

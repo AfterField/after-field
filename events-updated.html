@@ -15,10 +15,6 @@
 
     <title>After Field</title>
 
-    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
-
-    <!-- End of Google Analytics code -->
-
   </head>
   <body class="h-100 d-flex flex-column">
 
@@ -34,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About Us</a>
@@ -43,7 +39,7 @@
               <a class="nav-link" href="corporate.html">Corporate</a>
             </li>
             <li class="nav-item">
-              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Join an event!</a>
+              <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Check all events!</a>
             </li>
           </ul>
         </div>
@@ -77,171 +73,317 @@
   <!-- Filter label -->
   <p class="mb-0">Filter:</p>
 
-  <!-- Dropdown -->
+  <!-- Event type Dropdown -->
   <div class="dropdown">
     <button class="btn btn-secondary custom-yellow" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Event type
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Individual</a></li>
-      <li><a class="dropdown-item" href="#">Team</a></li>
+      <li><a class="dropdown-item">Individual</a></li>
+      <li><a class="dropdown-item">Team</a></li>
     </ul>
   </div>
-
-<!-- End of search/filter bar -->
 	
   <!-- Location input -->
   <input class="form-control form-control-sm" style="max-width: 200px;" list="datalistOptions" id="exampleDataList" placeholder="Type the location...">
   <datalist id="datalistOptions">
-    <option value="Breda">
-    <option value="Rotterdam">
-    <option value="Amsterdam">
-    <option value="The Hague">
-    <option value="Maastricht">
+    <option value="Breda"></option>
+    <option value="Rotterdam"></option>
+    <option value="Amsterdam"></option>
+    <option value="The Hague"></option>
+    <option value="Maastricht"></option>
   </datalist>
 
   <!-- Date picker -->
-	
-  <input type="date" id="dates" name="dates" class="form-control form-control-sm" style="max-width: 150px;">
+  <input type="date" id="dates" name="dates" class="form-control form-control-sm custom-date-focus custom-date-hover" style="max-width: 150px;">
 	
   <!-- Search button -->
   <a href="events-updated.html" class="btn text-white border-0 custom-green" style="background: #ffde21;">
     Search
   </a>
 </div>
+	  
 <!-- End of search/filter bar -->
 
 	  
 <!--Start of Events list -->
   <div class="cards-container">
 	  
-  <!-- Card 1 -->
-
-<div class="container my-1">
-  <div class="card d-flex flex-row mx-auto" style="width: 80rem;">
-    <img src="images/events/events-card-1.jpg" alt="..." style="width:30%; object-fit: cover;">
+<!-- Card 1 -->
+<div class="container my-4">
+  <div class="card mx-auto p-0" style="border-radius: 1rem; overflow: hidden; max-width: 1140px;">
     
-    <div class="card-body d-flex flex-column position-relative" style="flex: 1;">
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">April 25, 16:00</small><br>
-        <small class="text-muted">Breda, Netherlands</small>
+    <div class="row g-0 flex-column flex-md-row">
+
+      <!-- Thumbnail -->
+      <div class="col-12 col-md-4">
+        <div class="h-100">
+          <img src="images/events/events-card-1.jpg" alt="Man playing football" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
       </div>
 
-      <!-- Main Content -->
-      <h2 class="card-title mt-5">Breda: Let's kick it</h2>
-      <p class="card-text">A laid-back day of football with fellow local players. No pressure, just passes, laughs, and good energy all around.</p>
+      <!-- Content -->
+      <div class="col-12 col-md-8 position-relative">
+        <div class="card-body d-flex flex-column h-100 position-relative">
 
-      <!-- Bottom Right Button -->
-      <a href="sign-up.html" class="btn btn-primary position-absolute custom-green" style="bottom: 0; right: 0; margin: 1rem;">
+      <!-- Top Left Tag + Number of Spots -->
+      <div class="position-absolute d-flex flex-column flex-md-row align-items-start align-items-md-center" style="top: 1rem; left: 1rem;">
+        <span class="tag green-tag-individual">Individual</span>
+  
+        <div class="d-flex align-items-center mt-1 mt-md-0 ms-0 ms-md-2">
+          <img src="images/events/person-icon.png" alt="person icon"
+         style="width: 20px; height: auto; vertical-align: middle; margin-right: 4px;">
+          <small class="text-muted">15/22</small>
+        </div>
+      </div>
+
+
+          <!-- Top Right Date + Location -->
+          <div class="position-absolute text-end" style="top: 1rem; right: 1rem;">
+            <small class="text-muted">April 25, 16:00</small><br>
+            <small class="text-muted">Sportcomplex Paradijs Breda, Netherlands</small>
+          </div>
+
+          <!-- Main Text -->
+          <div class="mt-5 pt-3">
+            <h2 class="card-title">Breda: Let's kick it</h2>
+            <p class="card-text">A laid-back day of football with fellow local players. No pressure, just passes, laughs, and good energy all around.</p>
+          </div>
+
+    <!-- Sign-up Button -->
+    <div class="position-absolute" style="bottom: 1rem; right: 1rem;">
+      <a href="sign-up.html" class="btn btn-success px-4 py-2 mb-0 custom-green" style="border-radius: 0.75rem;">
         Sign up
       </a>
     </div>
+
+        </div>
+      </div>
+    </div>
   </div>
- </div>
+</div>
+
 	  
-  <!-- Card 2 -->
-
-<div class="container my-1">
-  <div class="card d-flex flex-row mx-auto" style="width: 80rem;">
-    <img src="images/events/events-card-2.jpg" alt="..." style="width:30%; object-fit: cover;">
+<!-- Card 2 -->
+<div class="container my-4">
+  <div class="card mx-auto p-0" style="border-radius: 1rem; overflow: hidden; max-width: 1140px;">
     
-    <div class="card-body d-flex flex-column position-relative" style="flex: 1;">
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">April 26, 16:00</small><br>
-        <small class="text-muted">Rotterdam, Netherlands</small>
+    <div class="row g-0 flex-column flex-md-row">
+
+      <!-- Thumbnail -->
+      <div class="col-12 col-md-4">
+        <div class="h-100">
+          <img src="images/events/events-card-2.jpg" alt="Men playing football" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
       </div>
 
-      <!-- Main Content -->
-      <h2 class="card-title mt-5">Rotterdam: Meet and Match</h2>
-      <p class="card-text">Come solo or with a mate — teams form on the spot. A casual way to meet new people and play the game you love.</p>
+      <!-- Content -->
+      <div class="col-12 col-md-8 position-relative">
+        <div class="card-body d-flex flex-column h-100 position-relative">
 
-      <!-- Bottom Right Button -->
-      <a href="#" class="btn btn-primary position-absolute custom-green" style="bottom: 0; right: 0; margin: 1rem;">
+      <!-- Top Left Tag + Number of Spots -->
+      <div class="position-absolute d-flex flex-column flex-md-row align-items-start align-items-md-center" style="top: 1rem; left: 1rem;">
+        <span class="tag green-tag-individual">Individual</span>
+  
+        <div class="d-flex align-items-center mt-1 mt-md-0 ms-0 ms-md-2">
+          <img src="images/events/person-icon.png" alt="person icon"
+         style="width: 20px; height: auto; vertical-align: middle; margin-right: 4px;">
+          <small class="text-muted">18/22</small>
+        </div>
+      </div>
+
+
+          <!-- Top Right Date + Location -->
+          <div class="position-absolute text-end" style="top: 1rem; right: 1rem;">
+            <small class="text-muted">April 26, 16:00</small><br>
+            <small class="text-muted">Sportpark Olympia Rotterdam, Netherlands</small>
+          </div>
+
+          <!-- Main Text -->
+          <div class="mt-5 pt-3">
+            <h2 class="card-title">Rotterdam: Meet and Match</h2>
+            <p class="card-text">Come solo or with a mate — teams form on the spot. A casual way to meet new people and play the game you love.</p>
+          </div>
+
+    <!-- Sign-up Button -->
+    <div class="position-absolute" style="bottom: 1rem; right: 1rem;">
+      <a href="sign-up.html" class="btn btn-success px-4 py-2 mb-0 custom-green" style="border-radius: 0.75rem;">
         Sign up
       </a>
     </div>
-  </div>
- </div>
-	  
-  <!-- Card 3 -->
 
-<div class="container my-1">
-  <div class="card d-flex flex-row mx-auto" style="width: 80rem;">
-    <img src="images/events/events-card-3.jpg" alt="..." style="width:30%; object-fit: cover;">
-    
-    <div class="card-body d-flex flex-column position-relative" style="flex: 1;">
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">April 30, 18:00</small><br>
-        <small class="text-muted">Amsterdam, Netherlands</small>
+        </div>
       </div>
-
-      <!-- Main Content -->
-      <h2 class="card-title mt-5">Amsterdam: Just play</h2>
-      <p class="card-text">Amsterdam’s bringing a space to connect with other players, and just enjoy the game for what it is — fun, freeing, and full of fam energy.</p>
-
-      <!-- Bottom Right Button -->
-      <a href="#" class="btn btn-primary position-absolute custom-green" style="bottom: 0; right: 0; margin: 1rem;">
-        Sign up
-      </a>
     </div>
   </div>
- </div>
-	  
-  <!-- Card 4 -->
-
-<div class="container my-1">
-  <div class="card d-flex flex-row mx-auto" style="width: 80rem;">
-    <img src="images/events/events-card-4.jpg" alt="..." style="width:30%; object-fit: cover;">
-    
-    <div class="card-body d-flex flex-column position-relative" style="flex: 1;">
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">May 5th, 17:00</small><br>
-        <small class="text-muted">The Hague, Netherlands</small>
-      </div>
-
-      <!-- Main Content -->
-      <h2 class="card-title mt-5">The Hague: Team Tournament</h2>
-      <p class="card-text">A laid-back tournament where teams are made on the fly, and everyone's here to have a good time. The Hague’s chillest football meetup — come for the game, stay for the vibes (and the after field beers).</p>
-
-      <!-- Bottom Right Button -->
-      <a href="#" class="btn btn-primary position-absolute custom-green" style="bottom: 0; right: 0; margin: 1rem;">
-        Sign up
-      </a>
-    </div>
-  </div>
- </div>
-	  
-  <!-- Card 5 -->
-
-<div class="container my-1">
-  <div class="card d-flex flex-row mx-auto" style="width: 80rem;">
-    <img src="images/events/events-card-5.jpg" alt="..." style="width:30%; object-fit: cover;">
-    
-    <div class="card-body d-flex flex-column position-relative" style="flex: 1;">
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">May 2nd, 17:00</small><br>
-        <small class="text-muted">Maastricht, Netherlands</small>
-      </div>
-
-      <!-- Main Content -->
-      <h2 class="card-title mt-5">Maastricht: Sunday Hangout</h2>
-      <p class="card-text">No rush, no stress, just for the love of the game.</p>
-
-      <!-- Bottom Right Button -->
-      <a href="#" class="btn btn-primary position-absolute custom-green" style="bottom: 0; right: 0; margin: 1rem;">
-        Sign up
-      </a>
-    </div>
-  </div>
- </div>
 </div>
 	  
-<!-- Footer-->
+<!-- Card 3 -->
+<div class="container my-4">
+  <div class="card mx-auto p-0" style="border-radius: 1rem; overflow: hidden; max-width: 1140px;">
+    
+    <div class="row g-0 flex-column flex-md-row">
+
+      <!-- Thumbnail -->
+      <div class="col-12 col-md-4">
+        <div class="h-100">
+          <img src="images/events/events-card-3.jpg" alt="Football balls" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-12 col-md-8 position-relative">
+        <div class="card-body d-flex flex-column h-100 position-relative">
+
+      <!-- Top Left Tag + Number of Spots -->
+      <div class="position-absolute d-flex flex-column flex-md-row align-items-start align-items-md-center" style="top: 1rem; left: 1rem;">
+        <span class="tag yellow-tag-team">Team</span>
+  
+        <div class="d-flex align-items-center mt-1 mt-md-0 ms-0 ms-md-2">
+          <img src="images/events/person-icon.png" alt="person icon"
+         style="width: 20px; height: auto; vertical-align: middle; margin-right: 4px;">
+          <small class="text-muted">Full</small>
+        </div>
+      </div>
+
+
+          <!-- Top Right Date + Location -->
+          <div class="position-absolute text-end" style="top: 1rem; right: 1rem;">
+            <small class="text-muted">April 30th, 18:00</small><br>
+            <small class="text-muted">Sportpark Bijlmer Amsterdam, Netherlands</small>
+          </div>
+
+          <!-- Main Text -->
+          <div class="mt-5 pt-3">
+            <h2 class="card-title">Amsterdam: Just play</h2>
+            <p class="card-text">Amsterdam’s bringing a space to connect with other players, and just enjoy the game for what it is — fun, freeing, and full of fam energy.</p>
+          </div>
+
+    <!-- Sign-up Button -->
+    <div class="position-absolute" style="bottom: 1rem; right: 1rem;">
+      <a href="sign-up.html" class="btn btn-success px-4 py-2 mb-0 custom-green" style="border-radius: 0.75rem;">
+        Sign up
+      </a>
+    </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	  
+<!-- Card 4 -->
+<div class="container my-4">
+  <div class="card mx-auto p-0" style="border-radius: 1rem; overflow: hidden; max-width: 1140px;">
+    
+    <div class="row g-0 flex-column flex-md-row">
+
+      <!-- Thumbnail -->
+      <div class="col-12 col-md-4">
+        <div class="h-100">
+          <img src="images/events/events-card-4.jpg" alt="Football game in a stadium" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-12 col-md-8 position-relative">
+        <div class="card-body d-flex flex-column h-100 position-relative">
+
+      <!-- Top Left Tag + Number of Spots -->
+      <div class="position-absolute d-flex flex-column flex-md-row align-items-start align-items-md-center" style="top: 1rem; left: 1rem;">
+        <span class="tag yellow-tag-team">Team</span>
+  
+        <div class="d-flex align-items-center mt-1 mt-md-0 ms-0 ms-md-2">
+          <img src="images/events/person-icon.png" alt="person icon"
+         style="width: 20px; height: auto; vertical-align: middle; margin-right: 4px;">
+          <small class="text-muted">11/22</small>
+        </div>
+      </div>
+
+
+          <!-- Top Right Date + Location -->
+          <div class="position-absolute text-end" style="top: 1rem; right: 1rem;">
+            <small class="text-muted">May 2nd, 17:00</small><br>
+            <small class="text-muted">Sportpark Laakkwartier The Hague, Netherlands</small>
+          </div>
+
+          <!-- Main Text -->
+          <div class="mt-5 pt-3">
+            <h2 class="card-title">The Hague: Team Tournament</h2>
+            <p class="card-text">A laid-back tournament where teams are made on the fly, and everyone's here to have a good time. The Hague’s chillest football meetup — come for the game, stay for the vibes (and the after field beers).</p>
+          </div>
+
+    <!-- Sign-up Button -->
+    <div class="position-absolute" style="bottom: 1rem; right: 1rem;">
+      <a href="sign-up.html" class="btn btn-success px-4 py-2 mb-0 custom-green" style="border-radius: 0.75rem;">
+        Sign up
+      </a>
+    </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	  
+<!-- Card 5 -->
+<div class="container my-4">
+  <div class="card mx-auto p-0" style="border-radius: 1rem; overflow: hidden; max-width: 1140px;">
+    
+    <div class="row g-0 flex-column flex-md-row">
+
+      <!-- Thumbnail -->
+      <div class="col-12 col-md-4">
+        <div class="h-100">
+          <img src="images/events/events-card-5.jpg" alt="Men playing football" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-12 col-md-8 position-relative">
+        <div class="card-body d-flex flex-column h-100 position-relative">
+
+      <!-- Top Left Tag + Number of Spots -->
+      <div class="position-absolute d-flex flex-column flex-md-row align-items-start align-items-md-center" style="top: 1rem; left: 1rem;">
+        <span class="tag green-tag-individual">Individual</span>
+  
+        <div class="d-flex align-items-center mt-1 mt-md-0 ms-0 ms-md-2">
+          <img src="images/events/person-icon.png" alt="person icon"
+         style="width: 20px; height: auto; vertical-align: middle; margin-right: 4px;">
+          <small class="text-muted">13/22</small>
+        </div>
+      </div>
+
+
+          <!-- Top Right Date + Location -->
+          <div class="position-absolute text-end" style="top: 1rem; right: 1rem;">
+            <small class="text-muted">May 4th, 17:00</small><br>
+            <small class="text-muted">De Geusselt Stadion Maastricht, Netherlands</small>
+          </div>
+
+          <!-- Main Text -->
+          <div class="mt-5 pt-3">
+            <h2 class="card-title">Maastricht: Sunday Hangout</h2>
+            <p class="card-text">No rush, no stress, just for the love of the game.</p>
+          </div>
+
+    <!-- Sign-up Button -->
+    <div class="position-absolute" style="bottom: 1rem; right: 1rem;">
+      <a href="sign-up.html" class="btn btn-success px-4 py-2 mb-0 custom-green" style="border-radius: 0.75rem;">
+        Sign up
+      </a>
+    </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>	    
+	  
+<!-- End of Cards -->
+	  
+<!-- Footer -->
 <div class="container">
   <footer class="py-5">
     <div class="row">
@@ -263,6 +405,15 @@
         </ul>
       </div>
 
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">info@afterfield.com</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">+31611111111</a></li>
+        </ul>
+      </div>
+      
+
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
           <h5>Subscribe to our newsletter</h5>
@@ -275,6 +426,11 @@
         </form>
       </div>
     </div>
+
+    <div class="col-12 col-md-2 mb-3 text-center">
+      <img src="images/afterfield-logo2.png" alt="AfterField Logo" class="img-fluid" style="max-height: 200px;">
+    </div>
+
 
     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>

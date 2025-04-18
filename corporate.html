@@ -15,40 +15,56 @@
 
     <title>AfterField &mdash; Corporate Information</title>
 
-    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
-
-    <!-- End of Google Analytics code -->
     
   </head>
+
   <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/buas-square.svg" width="40" alt="Breda University of Applied Sciences">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="corporate.html">Corporate</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg nav-underline position-relative">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/afterfield-logo1.png" width="80" alt="Afterfield logo"> <!-- Increased width -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="corporate.html">Corporate</a>
+          </li>
+          <li class="nav-item">
+            <a href="events-updated.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Check all events!</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
     <!-- End of navigation bar -->
 
-    <header class="co-custom-header py-2 py-md-4 py-lg-5 text-center container-fluid text-light">
-      <div class="overlay"></div>
-      <h1 class="co-info-title">Corporate information</h1>
-    </header>
+    <!-- Header -->
+  <header class="text-center container-fluid"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/events/events-card-1.jpg');
+           background-size: cover;
+           background-position: center;
+           min-height: 50vh;
+           display: flex;
+           align-items: center;">
+<div class="row w-100">
+<div class="col-md-8 col-lg-6 mx-auto py-5 text-white text-center">
+  <h1 class="display-1 fw-bold fst-italic">Corporate</h1>
+</div>
+</div>
+</header>
+    <!--  End of Header -->
 
     <main class="container-fluid container-xl">
       <div class="row">
@@ -104,7 +120,7 @@
               <tr class="bg-white">
                 <th scope="col">#</th>
                 <th scope="col">Student Name</th>
-                <th scope="col">Number</th>
+                <th scope="col">Value</th>
                 <th scope="col">Name and link of content</th>
               </tr>
             </thead>
@@ -112,98 +128,228 @@
               <tr>
                 <th scope="row">1.</th>
                 <td>Gabija Gembickytė</td>
-                <td>233541</td>
+                <td>Brand persona and Copywriting</td>
                 <td>
-                  <a href="index.html">Homepage</a>
+                  <a href="index.html"> Homepage Copywriting,</a>
+                  <a href="#brand-persona"> Brand persona</a>
                 </td>
               </tr>
               <tr>
                 <th scope="row">2.</th>
                 <td>Alexandra Rujan</td>
-                <td>230733</td>
+                <td>Visual identity and Copywriting</td>
                 <td>
-                  <a href="#">Events</a>
-                  <a href="#">Sign up</a>
+                  <a href="events-updated.html">Copywriting,</a>
+                  <a href="#logo">Visual identity</a>
                 </td>
               </tr>
               <tr>
                 <th scope="row">3.</th>
                 <td>Lujza Péczely-Tallai</td>
-                <td>230481</td>
+                <td>Values and vision</td>
                 <td>
-                  <a href="#">About us</a>
+                  <a href="aboutus.html#values">Values and vision</a>
                 </td>
               </tr>
               <tr>
                 <th scope="row">4.</th>
                 <td>Leona Brodarić</td>
-                <td>230749</td>
+                <td>Mission</td>
                 <td>
-                  <a href="#">Coorporate</a>
+                  <a href="#mission">Mission</a>
                 </td>
               </tr>
             </tbody>
           </table>
+
+          <h6> Brand name:</h6>
+          <p>The name AfterField is a wordplay of “After” and “Field,” capturing our unique value proposition—focusing not only on the football matches themselves, but also on the post-match experiences that bring people together. By emphasizing the word “After,” we playfully highlight the idea that the field is not the only place where real connections are made.</p>
+          <h6 id="logo"> Logo:</h6>
+          <img src="images/corporate/afterfield.png" class="img-fluid w-25" alt="Logo">
+          <p> Our logo subtly references a football field while maintaining a modern and minimalistic aesthetic, using clean shapes and soft gradients. The two rectangles next to each other symbolize a sense of togetherness and unity, reflecting our community-driven value.</p>
+          <h6 id="mission"> Mission:</h6>
+          <p>In a world where football often gets lost in constant competition and professionalism, we believe in bringing it back to its roots—the social and casual side of the sport. Because football is more than just a game— it's a chance to unwind, have a laugh, and make lasting memories.</p>
+          <h6 id="brand-persona"> Brand persona:</h6>
+          <img src="images/corporate/brand-persona.png" class="img-fluid w-75" alt="Brand persona">
+          <h6> Values:</h6>
+          <ul>
+            <li>Casual</li>
+            <li>Light-hearted</li>
+            <li>Passion</li>
+            <li>Community</li>
+          </ul>
+          <p>For a detailed description, visit: <a href="aboutus.html#values"> About us page</a>!</p>
           
           <!-- End Content, start Production -->
           
           <h2 id="production" class="mt-5">Production</h2>
           <h4 id="production-1" class="mt-2">Design Elements</h4>
-          <p>Please provide a list of design elements alongside their justifications:</p>
+          <h6>Style guide</h6>
+          <img src="images/corporate/style-guide.png" class="img-fluid w-75" alt="Brand persona">
+          <h6>Color palette</h6>
           <ul>
-            <li>
-              A colour scheme (with HTML colour codes, which must be consistent with your final website)
-              <em>&mdash; see the example below from the BUas brand book:</em>
-              <ul class="list-unstyled">
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #EE7622;"></span>
-                  #EE7622
-                  <em>The orange colour refers to the Dutch identity and the city of Breda (Oranjestad). Orange stands for&hellip;</em>
-                </li>
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #00406B;"></span>
-                  #00406B
-                  <em>Dark blue signifies&hellip;</em>
-                </li>
-              </ul>
-            </li>
-            <li>Font choices</li>
-            <li>User interface patterns (e.g. grids, carousels, menu organizations etc.)</li>
-            <li>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</li>
-            <li>All these elements must be justified by referring to the theory <strong>and/or vocabulary</strong> of design</li>
-            <li>Please relate these elements to other units, for example:
-              <ul>
-                <li>How does website design fit the <strong>values and personality of the brand</strong>?</li>
-                <li>How does website design fit the <strong>marketing and communication strategy</strong>?</li>
-                <li>How does website design help showcase the <strong>unique value proposal of the product</strong>?</li>
-              </ul>
-            </li>
+          <p><span class="border-secondary rounded px-2 me-2" style="background-color: #143109;"></span> #EE7622- Dark green is often associated with stability, growth, and strength. It has a grounding effect and can symbolize endurance, which is fitting for a sport like football where resilience and toughness are key attributes.</p>
+          <p><span class="border-secondary rounded px-2 me-2" style="background-color: #AAAE7F;"></span> #AAAE7F- This shade of green complements neutral tones and is easy on the eyes. It can bring a sense of balance to the palette while ensuring the look does not feel too harsh or overwhelming. It helps to balance out the deeper tones of green, preventing the design from feeling too intense or heavy- reflecting our brand values of light-heartedness and casualness.</p>
+          <p><span class="border-secondary rounded px-2 me-2" style="background-color: #D0D6B3;"></span> #D0D6B3- To truly stick to the universal and main colour of our brand, another lighter shade of green was added.</p>
+          <p><span class="border border-secondary rounded px-2 me-2" style="background-color: #F7F7F7;"></span> #F7F7F7- Off-white shades evoke feelings of cleanliness, simplicity, and freshness. It is a color that feels light and airy, making it ideal for backgrounds or creating a neutral foundation in design.</p>
+          <p><span class="border-secondary rounded px-2 me-2" style="background-color: #FFDE21;"></span> #FFDE21- Bright yellow breaks the constant repetition of the color green while highlighting the important information and/or content. It conveys a sense of energy, optimism, and enthusiasm. In the context of a football match, it can evoke excitement, and high energy—perfect for a sporting event.</p>
           </ul>
-          <h4 id="production-2" class="mt-2">Credits</h4>
-          <p>Please provide links and/or credits for third-party elements including:</p>
+          <p>Overall, we went for the colors resembling football pitch (shades of green and a neutral white), to keep consistency with our brand name, AfterField, and to create a positive, cohesive association for our target audience. Yellow was added as a standout color in the design to break the dominant green in the palette and to symbolise the fun, energetic nature of the sport.</p>
+          <p>During user testing, our target audience immediately recognized who the brand was intended for based on the design alone, confirming a strong alignment between our visual style and target audience.</p>
+          <h6>Font choices</h6>
+          <p>Since our target audience is specifically male football players, we have chosen fonts that had a sleek and simlple look. We try to communicate the casual value of our brand in the simplicity of its design.</p>
           <ul>
-            <li>HTML <strong>templates</strong> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
-            <li>The source code for <strong>UX patterns</strong> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list of such patterns)</li>
-            <li><strong>Images</strong> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
+            <p class="coolvetica-ex"><u>Coolvetica</u></p>
+            <p>This font was used for the website headings, chosen for its high legibility, clean appearance, and masculine feel. Its rounded forms and tight spacing give it a confident and youthful tone, while the bold weight adds a sense of credibility. </p>
+            <p class="parabolica-ex"> <u>Parabolica</u></p>
+            <p>The font was selected for its simplicity, readability, and casual tone, making it a perfect fit for our brand- resonating with a community-oriented, easy-going audience. The font family offers a wide range of weights and styles, including italics and various bold options, allowing for design flexibility while maintaining visual coherence.</p>
+          </ul>
+          <h6>User interface patterns (e.g. grids, carousels, menu organizations etc.)</h6>
+          <p><strong>Grid:</strong> The layout is built on a flexible 12-column grid, providing a strong foundation for a responsive and balanced design. Most of our sections utilize a single column for a clean, focused presentation of content, allowing for maximum visibility and emphasis. Some of our sections, including images and text, we expand to two columns, creating a balanced, side-by-side layout that enables complementary content. Finally, the third section utilizes a three-column layout (featured only at the beginning of the homepage to communicate “What we are all about”), optimizing space while ensuring clear separation between elements. Since this section is one of the first things users encounter when visiting the landing page, this grid structure is somewhat dynamic, designed to capture attention and spark curiosity.</p>
+          <p><strong>Navigation bar:</strong> We simplified our navigation bar to include as less information as possible. With a simple and clean design, the user is able to find information quickly as it is uncluttered and there is a big black-white contrast between its background and text colour. To highlight our brand's core function—organizing football matches—we included a prominent “Check all the events” button on the right side of the navigation bar.</p>
+          <p><strong>Carousel:</strong> On the landing page, we implemented a scrollable carousel featuring images of football players enjoying themselves and having fun. Concerning hierarchy of content, this element was chosen to be important enough to visually communicate our brand's core value of community. The carousel format allowed us to showcase multiple moments without overwhelming the screen space, maintaining a clean and engaging design.</p>
+          <p><strong>Cards:</strong> Cards are used to add visual interest and stand out within the simplistic design, bringing a touch of vibrancy and playfulness to our website. On the 'About Us' page, cards help emphasize our key brand values, while on the Events page, they display all available football matches. By using cards for event displays, we ensure that the information is easy to digest and visually appealing, providing a clear, engaging layout for users. The rounded corners of the cards avoid rigid, sharp feeling and create a casual, light-hearted atmosphere, reinforcing our brand's tone. </p>
+          <p><strong>Search bar:</strong> We implemented a search bar feature to make football match searching more accessible and tailored to the customer's need. By entering a city location in the Netherlands, users can easily discover events happening in their area.</p>
+          <p><strong>Filter button:</strong> We also integrated a filter feature to enhance the search experience, allowing users to narrow down football match results based on specific criteria such as date and event type. This empowers users to find the most relevant matches quickly and efficiently, ensuring a more personalized and streamlined experience.</p>
+          <p><strong>Text boxes:</strong> As a brand that requires users to sign up through our website, it is crucial to ensure that we collect all relevant contact and user information seamlessly. This is where text boxes play a vital role. They are designed to make the process of entering data easy, clear, and efficient during sign-up for an event.</p>
+          <p><strong>Overlays:</strong> To maintain a clean and uncluttered visual experience, we incorporated overlays to present information in a more focused and engaging way. One of the overlays features a playful interactive question, allowing team members to choose whether they want their name displayed on a digital field when signing up for an event—adding a personal and fun touch. The second overlay appears during the payment confirmation process, reassuring users that their registration fee has been successfully processed and their spot on the field is secured.</p>
+          <p><strong>Buttons:</strong> Buttons are a crucial element in any UI/UX experience. We ensured that each button stands out by using bold colours like yellow or dark green, drawing attention to key actions and enhancing the overall visual hierarchy of the pages.</p>
+          <h6>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</h6>
+          <p>Staying true to our design principles of simplicity and practicality, we deliberately avoided overcrowding the navigation bar. This helps reduce screen overload and ensures a clean, user-friendly browsing experience. Even so, there are multiple ways to access different pages with help of various buttons and navigation bar, which encourages our users to feel in power and confident when going through our website. The content throughout the site is straightforward and direct—reflecting the preferences of our target audience, who value clarity with no unnecessary distractions.</p>
+          <p>We structured the website so that each page serves a distinct and intentional purpose. The <strong>landing page</strong> is designed to briefly introduce AfterField and highlight its core feature—searching for football matches by featuring a prominent search bar in the middle of the header with a logo and a message/slogan of our marketing and communication plan, „All is casual.“. When scrolled, the homepage also features a carousel displaying images from past matches, reinforcing our brand's key value of community and passion in a dynamic and engaging way. Lastly, the page displays partnerships and collaborators to boost brand's credibility, FAQ for any additional questions and a footer in which our contact, newsletter and socials are shown.</p>
+          <p>The <strong>About us page</strong> gives users insight into our brand story, values, and mission. The page's primary goal is to clearly position AfterField in the minds of our audience and communicate what we stand for. The <strong>Events page</strong> lists all current and upcoming matches, organized in chunked event cards, each representing an individual event. When users click on an event card's button, they are directed to a <strong>Sign up page</strong> page, where they can enter their credentials, read a full event description, and access all relevant information needed to participate. After completing their registration, users are directed to a <strong>Payment page</strong> where they can enter their payment details. Upon successful submission, an overlay appears to confirm their payment and secure their spot, providing clear feedback on their sign-up status.</p>
+
+          <h4 id="production-2" class="mt-2">Credits</h4>
+          <h6>Template credits</h6>
+          <p>This website was built based on the template of <a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a></p>
+          <p>Other source codes where taken from <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a></p>
+          <h6>Image credits</h6>
+          <ul>
+            <li>Events Hero picture - William Smith on Unsplash </li>
+            <li>Events card 1 - Ruben Leija on Unsplash </li>
+            <li>Events card 2 - phillipkofler on Pixabay </li>
+            <li>Events card 3 - planet_fox on Pixabay </li>
+            <li>Events card 4 - Fancy Crave on Unsplash </li>
+            <li>Events card 5 - David Clarke on Unsplash </li>
+            <li>Sign-up Hero picture - Terrace Grain on Unsplash </li>
+            <li>Breda field picture - Patrick Konior on Unsplash </li>
+            <li>About us- <a href="https://www.rawpixel.com/image/5908383/image-public-domain-green-black">'Free men playing a soccer game on field image, public domain sport CC0 photo' taken from Rawpixel</a></li>
+            <li>About us- <a href="https://www.rawpixel.com/image/6061922/free-public-domain-cc0-photo">'Free public domain CC0 photo' taken from Rawpixel</a></li>
+            <li>About us- <a href="https://www.rawpixel.com/image/5922002/photo-image-light-public-domain-green">'Free men playing a soccer game on field image, public domain sport CC0 photo' taken from Rawpixel</a></li>
+            <li>Home page- <a href="https://www.pexels.com/photo/joyful-soccer-players-celebrating-victory-outdoors-31605994/">Franco Monslavo on Pexels</a></li>
+            <li>Home page- <a href="https://www.pexels.com/photo/group-of-teenagers-playing-football-on-field-31642266/">Madknoxx Deluxe on Pexels</a></li>
+            <li>Home page- <a href="https://www.pexels.com/photo/soccer-players-huddle-together-on-the-field-27394504/">Omar Ramadan on Pexels</a></li>
+            <li>Home page- <a href="https://www.pexels.com/photo/top-view-photo-of-soccer-field-during-day-3448250/">Tom Fisk on Pexels</a></li>
+            <li>Home page- <a href="https://icons.getbootstrap.com/ ">Icons taken from Bootstrap gallery</a></li>
           </ul>
           <h4 id="production-3" class="mt-2">Testing Report</h4>
-          <p>Please write about&hellip;</p>
+          <h6>Testing goals</h6>
+          <p> The goal of this user testing is to evaluate the effectiveness, clarity, and usability of the AfterField website for first-time users within our target demographic. Specifically, we aim to assess:</p>
           <ul>
-            <li>Your testing <strong>goals</strong> &ndash; in other words, what you are trying to learn about your website?</li>
-            <li>Your testing <strong>methods</strong>, which includes information about:
-              <ul>
-                <li>The test&rsquo;s <strong>participants</strong> (number, match with target audience, etc.)
-                <li>The test&rsquo;s <strong>setting</strong> (which material is used, is it done remotely, on campus, at home, etc.)
-                <li>The test&rsquo;s <strong>protocol</strong> (what instructions are given, how it is recorded, etc.)
-              </ul>
-            </li>
-            <li>Your testing <strong>results</strong>, which includes information about:
-              <ul>
-                <li>Positive and negative aspects of the UI/UX that have been identified, ranked by importance.</li>
-                <li>Improvements that have been implemented on the final website (or that would be implemented if doing so would be too complex)</li>
-              </ul>
-            </li>
+            <li><strong>Initial brand perception:</strong> How well the landing page communicates the core concept and target audience of AfterField before any explanation is given.</li>
+            <li><strong>Usability and navigation:</strong> How intuitively participants can explore the site, locate key features (e.g. events, sign-up options, brand info), and complete relevant tasks.</li>
+            <li><strong>Overall user experience:</strong> Participants' impressions of the site's design, structure, and how well it aligns with the AfterField brand identity.</li>
+            <li><strong>Areas for improvement:</strong> Identification of any points of confusion, missing information, or opportunities to enhance clarity, functionality, and engagement.</li>
           </ul>
+
+          <h6>Testing protocol</h6>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr class="bg-white">
+                <th scope="col"></th>
+                <th scope="col">Participants</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1.</th>
+                <td>Marek Tomco</td>
+                <td>22</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th scope="row">2.</th>
+                <td>Omer Taha </td>
+                <td>29</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th scope="row">3.</th>
+                <td>Afro Kumbakumba</td>
+                <td>27</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th scope="row">4.</th>
+                <td>Antonio Rodriguez</td>
+                <td>22</td>
+                <td>Male</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Participants</strong></p>
+          <p>The testing protocol will include four individuals who fall within the demographic of our intended target audience. Specifically, these participants will be males between the ages of 22 and 30 who identify as casual football players—that is, individuals who play the sport recreationally rather than professionally. While ethnicity and nationality are not determining factors in the selection process, it is important to stress that all participants currently reside in the Netherlands, ensuring a shared cultural and geographic context for the testing.</p>
+          <p><strong>Setting</strong></p>
+          <p>All of the testing interviews will be done in the university setting within a classroom to ensure a structured and controlled space for testing without interruptions. All user testing sessions will be carried out in person, as this format enables the most effective observation of how participants navigate and engage with the interface or our website.</p>
+          <p><strong>Recording and proof</strong></p>
+          <p>All of the sessions will be recorded via OBS program through screen capture. This approach will allow us to look back at the exact path taken by each participant, providing deeper insights and feedback. In addition to screen recording, we will capture participants' facial expressions and non-verbal cues using the laptop's built-in camera. This allows for a simultaneous capture of screen activity and participant reactions.</p>
+          <p>The recordings are available at the following OneDrive link: <a href="https://edubuas-my.sharepoint.com/:f:/g/personal/230749_buas_nl/Et2Kq6774phPuIZ57Bu4H4sBjHjHk88VTpW0Iwumx0pZPQ?e=gkZcMx">User testing recordings </a></p>
+          <p><strong>Testing questions</strong></p>
+          <p>First impression questions (before brand introduction): </p>
+          <ul>
+            <li>What do you think this website is about?</li>
+            <li>Who do you think this website is for?</li>
+          </ul>
+          <p><em>Introducing the brand: “AfterField brings together casual amateur players by organizing matches across the Netherlands. The goal is to create an enjoyable football experience while fostering social interaction. After each game, the players will have the opportunity to enjoy after match activities like free beer round after winning the match.” </em></p>
+          <p>Website navigation questions:</p>
+          <ol>
+            <li>Let's say you wanted to check out Afterfield's events, how would you do it? (2 ways) </li>
+            <li>If you wanted to see more information about the brand, where would you go? (2 ways)</li>
+            <li>How would you search for an event in a specific city? What about a specific date?</li>
+            <li>If you wanted to search specifically for individual events, what would you do?</li>
+            <li>Let's say you wanted to sign up for the Afterfield event in Breda, how would you do it?</li>
+            <li>Can you sign up for the event in Breda again, but this time as a team?</li>
+            <li>How would you return to the homepage?</li>
+            <li>If you wanted to subscribe to our newsletter, where would you look?</li>
+          </ol>
+          <p>Post testing questions:</p>
+          <ol>
+            <li>What did you think of the overall experience?</li>
+            <li>Was it hard to get by?</li>
+            <li>Do you think there's some parts of information that are missing? </li>
+            <li>Does the design match the brand?</li>
+            <li>Any advice?</li>
+          </ol>
+          <h6>Testing findings</h6>
+          <p>The users were overall happy with how they managed to navigate. For them, the website was intuitive and easy to use. Furthermore, despite the positive feedback on the design match between our TA and visual identity, several usability and design issues were identified during testing.</p>
+          <p>These have been ranked by priority: </p>
+          <ol>
+            <li>Responsive layout on the Events page- When testing screen formats, it was found that the Events page has to implement a responsive layout. Specifically, the event cards are not displaying correctly on mobile devices. Improvements are needed to ensure the layout adapts seamlessly to smaller screens.</li>
+            <li>Event Attendance Transparency- Nearly all participants mentioned the lack of visibility regarding attendance for upcoming matches. Users expressed a strong need to see how many spots were available and how many were already filled for each AfterField event. This data should be clearly displayed on the Events and Sign-Up pages to help manage expectations and encourage participation.</li>
+            <li>Terminology for Event Registration- Some users found the labels “Individual Events” and “Team Events” unclear. There was confusion around what action each button initiated. A recommended improvement is to rephrase these options as “Sign up as an Individual” and “Sign up as a Team” to better communicate the functionality and reduce cognitive load.</li>
+            <li>Payment Information Visibility- Users wanted access to payment-related information prior to the sign-up process. Displaying pricing or payment details earlier in the user journey (e.g., on the Events overview or event detail pages).</li>
+            <li>Event Location Accessibility- The address of the event is currently only visible during the sign-up stage, which users found inconvenient. The event's exact address and date should be prominently displayed on the Events and at the top of the Sign-Up pages.</li>
+            <li>Unnecessary Dropdown Functionality- Participants noted that when event types are filtered in the search bar, the dropdown selection for “Individual” or “Team” during sign-up becomes redundant. This may lead to confusion and should either be removed or updated dynamically based on prior user filters.</li>
+            <li>Missing “Contact Us” CTA- One participant highlighted the absence of a “Contact Us” button or section in the footer. Including a clear contact pathway is essential for addressing user inquiries and improving support accessibility.</li>
+            <li>Lack of Calendar Filter on Homepage- A calendar-based filter is available on the Events page but missing from the Home page. Users suggested adding a similar date-filtering functionality to the Home page to streamline event discovery.</li>
+            <li>Inconsistent Name Branding - There is inconsistency in the brand name presentation across the site—appearing both as “AfterField” and “After Field.” Ensuring consistency in naming is crucial for brand recognition and design coherence.</li>
+            <li>The size of the navigation bar- One participant mentioned that the navigation bar appears overly thick, with too much white space. A more compact navigation bar would contribute to a cleaner, more balanced layout and better use of screen space.</li>
+            <li>Lack of Visual Elements- The Home and About Us pages were described as lacking in visuals. Users wanted to see more imagery that reflects the AfterField community, such as photographs, illustrations, or icons.</li>
+          </ol>
+          <p><strong>Improvements made:</strong></p>
+          <p>Due to time contraint we managed to implement the most crucial and important changes:</p>
+          <ul>
+            <li>Responsive layout implemented on the Events page for better mobile display.</li>
+            <li>Event attendance info added to Event's cards.</li>
+            <li>Payment expectations now visible when clicking on a specific event (under i icon).</li>
+            <li>Dropdown menu for "Individual" and "Team" events changed into a simple tagline. </li>
+            <li>“Contact Us” button added to the footer.</li>
+            <li>Navigation bar made more compact to reduce white space.</li>
+            <li>Visual content (photos) added to Home and About Us pages.</li>
+          </ul>
+          <p>The rest were simply minor things that we chose to ignore for now due to time constraints.</p>
 
           <!-- End Production, start Marketing -->
 
@@ -328,6 +474,62 @@
         </div>
       </div>
     </main>
+	  
+	  <!-- Footer-->
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Directly to</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          <li class="nav-item mb-2"><a href="corporate.html" class="nav-link p-0 text-body-secondary">Corporate</a></li>
+          <li class="nav-item mb-2"><a href="events-updated.html" class="nav-link p-0 text-body-secondary">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Follow After Field</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/after.field/?hl=en" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.youtube.com/@AfterFieldOfficial" class="nav-link p-0 text-body-secondary">Youtube</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">info@afterfield.com</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">+31611111111</a></li>
+        </ul>
+      </div>
+      
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly updates about our newest exciting events!</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+            <a href="index.html" class="btn btn-lg custom-yellow m-1 d-block d-sm-inline">Subscribe</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-2 mb-3 text-center">
+      <img src="images/afterfield-logo2.png" alt="AfterField Logo" class="img-fluid" style="max-height: 200px;">
+    </div>
+
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2025 AfterField, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+    <!-- End of the footer -->
 
   </body>
 </html>
