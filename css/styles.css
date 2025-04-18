@@ -22,10 +22,21 @@ h2 {
  	font-family: "coolvetica", sans-serif;
  }
  
- h3 {
+h3 {
  	font-family: "coolvetica", sans-serif;
  }
- 
+
+h6 {
+  font-family: "coolvetica", sans-serif;
+  font-size:larger;
+  font-weight: 500;
+  font-style: italic;
+  color:#143109;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-left: 1em;
+}
+
 /* Changing the background color for the navigation bar */
 
 .navbar {
@@ -38,12 +49,6 @@ footer a:hover {
 	opacity: .5;
 }
 
-/* Corporate navbar */
-
-#navbar-corporate a.active {
-	color: #800000;
-	font-weight: bold;
-}
 
 /* Hero Section shadow */
 
@@ -89,6 +94,7 @@ footer a:hover {
     background-repeat: no-repeat; 
 }
 
+
 .co-custom-header .overlay {
     position: absolute;  
     top: 0;
@@ -102,6 +108,19 @@ footer a:hover {
 	max-width: 200px; 
 	height: auto;
 }
+
+.coolvetica-ex {
+  font-family: "coolvetica", sans-serif;
+  font-weight: 600;
+  font-size: large;
+  font-style: italic;
+}
+
+.parabolica-ex {
+  font-family: "parabolica", sans-serif;
+  font-size: large;
+}
+
 
 /* Button color*/
 .custom-yellow {
