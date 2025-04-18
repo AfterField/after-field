@@ -99,7 +99,7 @@
   </datalist>
 
   <!-- Date picker -->
-  <input type="date" id="dates" name="dates" class="form-control form-control-sm custom-date-hover custom-date-focus" style="max-width: 150px;">
+  <input type="date" id="dates" name="dates" class="form-control form-control-sm" style="max-width: 150px;">
 	
   <!-- Search button -->
   <a href="events-updated.html" class="btn text-white border-0 custom-green" style="background: #ffde21;">
@@ -114,25 +114,30 @@
   <div class="cards-container">
 	  
   <!-- Card 1 -->
-	  
 <div class="container my-1">
   <div class="card d-flex flex-row mx-auto" style="border-radius: 1rem;">
     <img src="images/events/events-card-1.jpg" alt="Man playing football" style="width:30%; object-fit: cover; border-radius: 1rem;">
     
     <div class="card-body d-flex flex-column position-relative" style="flex: 1 1 auto;">
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">April 25th, 16:00</small><br>
-        <small class="text-muted">Sportcomplex Paradijs Breda, Netherlands</small>
-      </div>
 
-	  <!-- Top Left Tag & Number of Spots -->
-		 <div class="position-absolute text-end" style="top: 0; left: 0; margin: 2rem;"> 
-			  <span class="tag green-tag-individual">Individual</span>
-			   <img src="images/events/person-icon.png" alt="person icon" style="width: 20px; height: 20px; object-fit: contain;">
-	           <small class="text-muted">15/22</small>
-		</div>
-	  
+		
+<!-- Top Row: Tag + Spots on Left, Date + Location on Right -->
+<div class="d-flex justify-content-between align-items-start mb-3">
+	
+  <!-- Left Side -->
+  <div>
+    <span class="tag green-tag-individual">Individual</span>
+    <img src="images/events/person-icon.png" alt="person icon" style="width: 20px; height: 20px; object-fit: contain;">
+    <small class="text-muted">15/22</small>
+  </div>
+
+  <!-- Right Side -->
+  <div class="text-end">
+    <small class="text-muted d-block">April 25, 16:00</small>
+    <small class="text-muted d-block">Sportcomplex Paradijs Breda, Netherlands</small>
+  </div>
+</div>
+
       <!-- Main Content -->
       <h2 class="card-title mt-5">Breda: Let's kick it</h2>
       <p class="card-text">A laid-back day of football with fellow local players. No pressure, just passes, laughs, and good energy all around.</p>
@@ -155,18 +160,23 @@
     
     <div class="card-body d-flex flex-column position-relative" style="flex: 1 1 auto;">
 		
-      <!-- Top Right Date & Location -->
-      <div class="position-absolute text-end" style="top: 0; right: 0; margin: 1rem;">
-        <small class="text-muted">April 26th, 16:00</small><br>
-        <small class="text-muted">Sportpark Olympia, Netherlands</small>
-      </div>
+<!-- Top Row: Tag + Spots on Left, Date + Location on Right -->
+<div class="d-flex justify-content-between align-items-start mb-3">
+	
+  <!-- Left Side -->
+  <div>
+    <span class="tag green-tag-individual">Individual</span>
+    <img src="images/events/person-icon.png" alt="person icon" style="width: 20px; height: 20px; object-fit: contain;">
+    <small class="text-muted">18/22</small>
+  </div>
 
-	  <!-- Top Left Tag & Number of Spots -->
-		 <div class="position-absolute text-end" style="top: 0; left: 0; margin: 2rem;"> 
-			  <span class="tag green-tag-individual">Individual</span>
-			   <img src="images/events/person-icon.png" alt="person icon" style="width: 20px; height: 20px; object-fit: contain;">
-	           <small class="text-muted">18/22</small>
-		</div>
+  <!-- Right Side -->
+  <div class="text-end">
+    <small class="text-muted d-block">April 26, 16:00</small>
+    <small class="text-muted d-block">Sportpark Olympia Rotterdam, Netherlands</small>
+  </div>
+</div>
+
 		
       <!-- Main Content -->
       <h2 class="card-title mt-5">Rotterdam: Meet and Match</h2>
@@ -181,7 +191,7 @@
     </div>
   </div>
  </div>
-		  
+	  
   <!-- Card 3 -->
 <div class="container my-1">
   <div class="card d-flex flex-row mx-auto" style="border-radius: 1rem;">
@@ -194,14 +204,14 @@
         <small class="text-muted">April 30, 18:00</small><br>
         <small class="text-muted">Sportpark Bijlmer Amsterdam, Netherlands</small>
       </div>
-
-	  <!-- Top Left Tag & Number of Spots -->
+		
+	  	  <!-- Top Left Tag & Number of Spots -->
 		 <div class="position-absolute text-end" style="top: 0; left: 0; margin: 2rem;"> 
 			  <span class="tag yellow-tag-team">Team</span>
 			   <img src="images/events/person-icon.png" alt="person icon" style="width: 20px; height: 20px; object-fit: contain;">
-	           <small class="text-muted">Full</small>
+	           <small class="text-muted">Full&nbsp;</small>
 		</div>
-		
+
       <!-- Main Content -->
       <h2 class="card-title mt-5">Amsterdam: Just play</h2>
       <p class="card-text">Amsterdam’s bringing a space to connect with other players, and just enjoy the game for what it is — fun, freeing, and full of fam energy.</p>
