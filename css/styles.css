@@ -32,8 +32,8 @@ h6 {
   font-weight: 500;
   font-style: italic;
   color:#143109;
-  padding-bottom: 1%;
-  padding-top: 2%;
+  padding-bottom: 1em;
+  padding-top: 2em;
   padding-left: 1em;
 }
 
@@ -119,6 +119,16 @@ footer a:hover {
 .parabolica-ex {
   font-family: "parabolica", sans-serif;
   font-size: large;
+}
+
+.img-padding {
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.spaces-text {
+  margin-top: 3em;
+  margin-bottom: 2em;
 }
 
 
